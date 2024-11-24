@@ -3,7 +3,7 @@ import os
 import base64
 from io import BytesIO
 from PIL import Image
-from backend.face_recognition.recognizer import recognize_face
+from backend.face_recognition.recognizer import recognize_face_with_faiss
 
 app = Flask(__name__)
 
@@ -45,7 +45,7 @@ def upload():
             return jsonify({"error": f"Failed to process the image: {str(e)}"}), 500
 
         # Realizar reconhecimento facial usando a função do recognizer.py
-        user_data = recognize_face(image_path)
+        user_data = recognize_face_with_faiss(image_path)
         if user_data:
             return jsonify(user_data)
         else:
