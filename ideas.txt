@@ -1,0 +1,6 @@
+Sistema para aprender a estrutura e uma face de uma pessoa
+
+o intuit é server ao governo, a pessoa vai tirar uma foto de uma pessoa, com ess foto vai ser realizado uma usca no banco de dados, ques seria governamental.
+
+aí  vai trazer foto
+ nome endereços e outroas informações
