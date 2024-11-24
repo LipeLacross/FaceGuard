@@ -6,11 +6,10 @@ def get_user_data(user_id):
     """
     Retorna os dados do usuário do banco de dados usando o ID fornecido.
     """
-    conn = sqlite3.connect(DATABASE)
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM users WHERE id=?", (user_id,))
-    user_data = cursor.fetchone()
-    conn.close()
+    with sqlite3.connect(DATABASE) as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE id=?", (user_id,))
+        user_data = cursor.fetchone()
 
     if user_data:
         return {
