@@ -1,6 +1,16 @@
 Sistema para aprender a estrutura e uma face de uma pessoa
 
-o intuit é server ao governo, a pessoa vai tirar uma foto de uma pessoa, com ess foto vai ser realizado uma usca no banco de dados, ques seria governamental.
+o intuito é servir ao governo, a pessoa vai tirar uma foto de uma pessoa, com essa foto vai ser realizado uma busca no banco de dados, que seria governamental ou de um Sistema de cadastro empresarial.
 
-aí  vai trazer foto
- nome endereços e outroas informações
+aí  vai trazer foto de indentificação o banco juntamente
+com nome endereços e outroas informações
+
+Seria um site we que poderia ser usado no mobile de forma responsive, podendo usar a camera do mesmo
+
+Frontend: HTML5, CSS3, JavaScript (MediaDevices API), Bootstrap para design responsivo.
+Backend: Python com Flask.
+Reconhecimento Facial: Biblioteca face_recognition em Python.
+Banco de Dados: SQLite para armazenamento de dados pessoais.
+Armazenamento de Imagens: Sistema de arquivos local.
+
+pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.9.0-py3-none-any.whl
